@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { AppContainer } from './styles';
 import { Column } from './Column';
 import { Card } from './Card';
+import { AddNewItem } from './AddNewItem';
 
 const Button = styled.button`
   background-color: linear-gradient(#333, #fff);
@@ -25,6 +26,7 @@ export const App = () => {
       <Column text='Done'>
         <Card text='Begin to static typing' />
       </Column>
+      <AddNewItem toggleButtonText='+ Add another list' onAdd={console.log} />
     </AppContainer>
   );
 };
